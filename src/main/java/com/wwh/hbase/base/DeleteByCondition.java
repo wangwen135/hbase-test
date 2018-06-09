@@ -1,4 +1,4 @@
-package com.wwh.hbase;
+package com.wwh.hbase.base;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HBaseConfiguration;
@@ -40,7 +40,8 @@ public class DeleteByCondition {
         scan.addFamily(family);
 
         scan.setFilter(new SingleColumnValueFilter(family, Bytes.toBytes("binaryContent"), CompareOp.EQUAL, Bytes.toBytes(true)));
-
+               
+        
         ResultScanner resultScanner = table.getScanner(scan);
 
         for (Result result : resultScanner) {

@@ -1,4 +1,4 @@
-package com.wwh.hbase;
+package com.wwh.hbase.base;
 
 import java.io.IOException;
 

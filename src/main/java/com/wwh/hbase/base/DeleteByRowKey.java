@@ -1,4 +1,4 @@
-package com.wwh.hbase;
+package com.wwh.hbase.base;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HBaseConfiguration;
@@ -45,11 +45,16 @@ public class DeleteByRowKey {
          * dtt6tdtgroj63iud.onion 共删除数据：103082
          * 3cvpkfx4gdnkcduj.onion
          * bitmsgd3emeypwpj.onion/
+         * 
+         * 第二次的
+         * arhivachovtj2jrp.onion 9197
+         * wikitjerrta4qgz4.onion 4148
+         * dutchdr5gsol4dde.onion 18954
          * </pre>
          */
 
-        scan.setStartRow(Bytes.toBytes("bitmsgd3emeypwpj.onion"));
-        scan.setStopRow(Bytes.toBytes("bitmsgd3emeypwpj.onion~"));
+        scan.setStartRow(Bytes.toBytes("dutchdr5gsol4dde.onion"));
+        scan.setStopRow(Bytes.toBytes("dutchdr5gsol4dde.onion~"));
 
         ResultScanner resultScanner = table.getScanner(scan);
 
